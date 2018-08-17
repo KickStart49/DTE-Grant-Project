@@ -25,7 +25,7 @@
 {
      margin-right: 50%;
 }
-.padding 
+.mainlogin 
 {
 	top:50%;
 	position: absolute;
@@ -35,10 +35,46 @@
 	border: 1px;
 	border-color: #d3d3d3;
 	box-shadow: 1px 1px 2px 2px #d3d3d3;
-    padding: 25px;
+    padding: 1px;
     margin: 25px;
-    padding-top: 5%;
+
+    cursor: ;
+    opacity:1;
+    background-color: #ffffff;
+
+    -webkit-transition: background-color, opacity, cursor 5s; /* Safari */
+    transition: background-color, opacity, cursor 5s;
+    transition-timing-function: ease;
+}
+.padding{
+	padding-top: 5%;
     padding-right: 3%;
     padding-bottom: 4%;
     padding-left:3% ;
+}
+.hidden{
+	display: none;
+}
+.loading{
+	background-color: #FAFAFA;
+	opacity: 0.8;
+	cursor : no-drop;
+}
+.loadingline {
+    width: 40%;
+    height: 3px;
+    background: #FFB38A;
+    position: relative;
+    -webkit-animation: loadinganimation 5s 2; /* Safari 4.0 - 8.0 */
+    -webkit-animation-direction: normal; /* Safari 4.0 - 8.0 */
+    animation: loadinganimation 5s 2;
+    animation-direction: normal;
+}
+
+@keyframes loadinganimation {
+    0%   {left: 0px; }
+    25%  {left: 60%;} 
+    50%  {left: 0px; }
+    75%  {left: 60%; }
+    100% {left: 0px; }
 }

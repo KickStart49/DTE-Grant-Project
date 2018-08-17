@@ -6,41 +6,37 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="../assets/css/login2.css">
-	<script type="text/javascript" src="..assets/js/jquery.min.js"></script>
-	<script type="text/javascript">
-		function ValidateEmail(email) 
-		{
-			var mailFormat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-    		if(email.value.match(mailFormat))
-    		{
-    			return (true)
-  			}
-  			else
-  			{
-    			alert("You have entered an invalid email address!")
-    			return (false)
-			}
-		}
-	</script>
+	<script type="text/javascript" src="../assets/js/jquery.min.js"></script>
+	<script type="text/javascript" src="../assets/js/customlogin.js"></script>
 </head>
 <body>
 	<div class="container-fluid">
-		<div class="row">
- 			<div class="col-md-4"></div>
- 			<div class="col-md-4 padding">
- 				<h3 class="title">Sign in</h3>
- 				<p class="title">with your Google Account</p>
- 				<form action="/action_page.php">
-    				<input type="email" class="form-control" id="email" name="email" placeholder="Email address:" required>
-    				<a href="" class="d">Forgot email?</a>
-    				<p>Not your computer? Use Guest mode to sign in privately. <a href="">Learn more</a></p>
-    				<div class="form-group">
-    					<a href="" class="c float-left">Create account</a>
-    					<input type="submit" class=" float-right btn btn-primary" value="Next">
-    				</div>
-    			</form>
- 			</div>	
- 			<div class="col-md-4"></div>
+ 		<div class="mainlogin col-4 login">
+ 			<div class="loadingline hidden"></div>
+ 			<div class="padding">
+	 			<h3 class="title">Sign in</h3>
+	 			<p class="title">with your KickStart Account</p>
+	 			<form method="post">
+	    			<input type="email" class="form-control" id="email" name="email" placeholder="Enter your email">
+	    			<p class="loginmessage"></p>
+	    			<br>
+	    			<div class="form-group">
+	    				<a href="" class="c float-left">Forgot email?</a>
+	    				<input type="button" onclick="loginsubmit()" class=" float-right btn btn-primary" value="Next">
+	    			</div>
+	    		</form>
+	 		</div>
+	 	</div>
+ 		<div class="padding col-4 hidden password">
+ 			<form method="post">
+ 				<h3 class="title">Hi abc</h3>
+ 				<p class="title">To continue, first verify it's you</p>
+ 				<input type="password" class="form-control" id="pwd" name="pwd" placeholder="Enter your password">
+ 				<div class="form-group"><br><br>
+    				<a href="" class="float-left">Forgot password?</a>
+    				<input type="button" onclick="passwordsubmit()" class="float-right btn btn-primary" value="Submit">
+    			</div>
+ 			</form>	
  		</div>  
 	</div>
 </body>
