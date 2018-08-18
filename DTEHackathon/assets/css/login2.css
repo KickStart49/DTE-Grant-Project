@@ -53,11 +53,11 @@
     75%  {background-color:green; left:0px; top:200px;}
     100% {background-color:red; left:0px; top:0px;}*/
 }
+
 .animation {
     width: 150px;
     height: 1.5px;
     background-color: white;
-    position: relative;
     /*Safari 4.0 - 8.0 */
     -webkit-animation-name: example;
     -webkit-animation-duration: 2s;
@@ -74,7 +74,6 @@
     animation-direction: alternate;
    
 }
-.back
-{
-	background : gray!important;
+.back{
+	background-color: #FAFAFA!important;
 }

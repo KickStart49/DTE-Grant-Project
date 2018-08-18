@@ -31,8 +31,7 @@ function VerifyEmail(email){
 	
   if(email=="abc@gmail.com")
   { 
-  		alert("ok");
-  		$("#login").addClass("back");
+  		$(".padding").addClass("back");
         /*$("#login").addClass("hidden");
   		$("#password").removeClass("hidden");*/
   		
@@ -41,3 +40,4 @@ function VerifyEmail(email){
   {
   		$(".loginmessage").html("Couldn't find your email address");
   }*/
+}
