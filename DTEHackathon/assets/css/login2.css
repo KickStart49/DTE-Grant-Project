@@ -1,0 +1,80 @@
+/*.form{
+	-webkit-box-shadow: 1px 1px  2px 2px #d3d3d3;
+	box-shadow: 1px 1px 2px 2px #d3d3d3;
+	top:50%;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	padding-top: 4%;
+	padding-bottom: 4%;
+	padding-left: 2%;
+	padding-right: 2%;
+}*/
+.title
+{
+	text-align: center;
+}
+.d {
+    line-height: 400%;
+}
+.c
+{
+	line-height:300%;
+}
+.e
+{
+	line-height: 600%;
+}
+.padding 
+{
+	top:50%;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%,-50%);
+
+	border: 1px;
+	border-color: #d3d3d3;
+	box-shadow: 1px 1px 2px 2px #d3d3d3;
+    padding: 25px;
+    margin: 25px;
+    padding-top: 5%;
+    padding-right: 3%;
+    padding-bottom: 4%;
+    padding-left:3% ;
+}
+.hidden
+{
+	display: none;
+}
+@keyframes example {
+    /*25%   {background-color:white; left:200px; top:0px;}*/
+    50%  {background-color:yellow; left:210px; top:0px;}
+    /*50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}*/
+}
+.animation {
+    width: 150px;
+    height: 1.5px;
+    background-color: white;
+    position: relative;
+    /*Safari 4.0 - 8.0 */
+    -webkit-animation-name: example;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    /* Standard syntax */
+    animation-name: example;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+   
+}
+.back
+{
+	background : gray!important;
+}
