@@ -22,12 +22,31 @@ function ValidateEmail(email)
 {
 
 	var mailFormat = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-  if(mailFormat.test(email))
-  {
+  	if(mailFormat.test(email))
+  	{
     
     // Check Database
 
-    VerifyEmail(email);
+    $(".login").addClass("loading");
+  	$(".loadingline").removeClass("hidden");
+    setTimeout(VerifyEmail, 2000);
+
+    function VerifyEmail(){
+
+	  if(email == "abc@gmail.com"){
+
+	    $(".login").addClass("hidden");
+	    $(".password").removeClass("hidden");
+
+	  }else{
+
+	    $(".login").removeClass("loading");
+	    $(".loadingline").addClass("hidden");
+	    $(".loginmessage").html("Couldn't find your account");
+
+	  }
+
+	}
 
   }else{
 
@@ -37,20 +56,3 @@ function ValidateEmail(email)
 
 }
 
-function VerifyEmail(email){
-
-  $(".login").addClass("loading");
-  $(".loadingline").removeClass("hidden");
-  // if(email == "abc@gmail.com"){
-
-  //   $(".login").addClass("hidden");
-  //   $(".password").removeClass("hidden");
-
-  // }else{
-
-  //   $(".login").removeClass("loading");
-  //   $(".loginmessage").html("Couldn't find your account");
-
-  // }
-
-}
