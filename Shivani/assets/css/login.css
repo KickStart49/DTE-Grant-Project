@@ -1,0 +1,45 @@
+.form{
+	-webkit-box-shadow: 1px 1px  2px 2px #d3d3d3;
+	box-shadow: 1px 1px 2px 2px #d3d3d3;
+	top:50%;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	padding-top: 4%;
+	padding-bottom: 4%;
+	padding-left: 2%;
+	padding-right: 2%;
+}
+.hidden{
+	display: none;
+}
+.val2{
+	font-size: 0.8em;
+	padding: 0!important;
+}
+.space{
+	padding-bottom: 4%;
+	padding-top: 4%;	
+}
+input[type="email"]{
+	border: none;
+	border-bottom: 1px solid #d3d3d3;
+}
+input[type="email"]:focus{
+	padding: 0!important;
+	border-top:none!important;
+	border-left:none!important;
+	border-right:none!important;
+	box-shadow: none;
+	border-bottom:1px solid blue!important;
+}
+.title{
+	text-align:center;
+}
+.submit{
+	align-items: right;
+	text-align: right;
+}
+body{
+	height: 100vh;
+}
