@@ -1,21 +1,21 @@
 $(document).ready(function () {
-  var email = $("#email").val();
-    if(email){
-      $('#email').focusout(function(event) {
+  $('#email').focusout(function() {
       $('.emaillabel').css({
           'top': '52%',
           'color': '#000000',
           'cursor': 'auto',
       });
+  });
+  $('#email').change(function(){
+    $('#email').focusout(function() {
+      if($("#email").val()){
+      $('.emaillabel').css({
+          'color': '#000000',
+          'top': '40%',
+      });}
     });
-    }else{
-      $('#email').focusout(function(event) {
-        $('.emaillabel').css({
-            'color': '#000000',
-        });
-      });
-    }
-    $('#email').focus(function(event) {
+  });
+    $('#email').focus(function() {
       $('.emaillabel').css({
           'color': '#4285F4',
           'top': '40%',
@@ -27,6 +27,7 @@ $(document).ready(function () {
     });
     $("#email").trigger("focus");
 });
+
 function loginsubmit(){
   
   var email = $("#email").val();
