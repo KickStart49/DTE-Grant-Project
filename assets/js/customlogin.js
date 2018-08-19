@@ -1,15 +1,24 @@
 $(document).ready(function () {
-    $('#email').focusout(function(event) {
+  var email = $("#email").val();
+    if(email){
+      $('#email').focusout(function(event) {
       $('.emaillabel').css({
           'top': '52%',
           'color': '#000000',
           'cursor': 'auto',
       });
     });
+    }else{
+      $('#email').focusout(function(event) {
+        $('.emaillabel').css({
+            'color': '#000000',
+        });
+      });
+    }
     $('#email').focus(function(event) {
       $('.emaillabel').css({
           'color': '#4285F4',
-          'top': '42%',
+          'top': '40%',
           'cursor': 'default',
       });
     });
