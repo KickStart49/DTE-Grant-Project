@@ -78,3 +78,31 @@
     75%  {left: 60%; }
     100% {left: 0px; }
 }
+input[type="email"]{
+	border-radius: 0;
+	margin-top: 8%;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom: 3px solid #d3d3d3; 
+	overflow: visible;
+}
+input[type="email"]:focus{
+	outline: none;
+	box-shadow: none;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom: 3px solid #4285F4; 
+	overflow: visible;
+}
+.emaillabel{
+	cursor: auto;
+	top: 52%;
+	left:5%;
+	color:#000000;
+	position: absolute;
+	 -webkit-transition: top 0.3s,color 0.3s; /* Safari */
+    transition: top 0.3s,color 0.3s;
+    transition-timing-function: ease-in-out;
+}

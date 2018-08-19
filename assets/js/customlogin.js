@@ -1,3 +1,23 @@
+$(document).ready(function () {
+    $('#email').focusout(function(event) {
+      $('.emaillabel').css({
+          'top': '52%',
+          'color': '#000000',
+          'cursor': 'auto',
+      });
+    });
+    $('#email').focus(function(event) {
+      $('.emaillabel').css({
+          'color': '#4285F4',
+          'top': '42%',
+          'cursor': 'default',
+      });
+    });
+    $(".emaillabel").click(function(){
+      $("#email").trigger("focus");
+    });
+    $("#email").trigger("focus");
+});
 function loginsubmit(){
   
   var email = $("#email").val();
