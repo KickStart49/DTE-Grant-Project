@@ -8,6 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="../assets/css/login2.css">
 	<script type="text/javascript" src="../assets/js/jquery.min.js"></script>
 	<script type="text/javascript" src="../assets/js/customlogin.js"></script>
+	<link rel="stylesheet" type="text/css" href="../assets/css/font/css/font-awesome.min.css">
 </head>
 <body>
 	<div class="container-fluid">
@@ -23,24 +24,38 @@
 	    			<br>
 	    			<div class="form-group">
 	    				<a href="" class="c float-left">Forgot email?</a>
-	    				<input type="button" onclick="loginsubmit()" class=" float-right btn btn-primary" value="Next">
+	    				<input type="button" onclick="loginsubmit()" id="next" class=" float-right btn btn-primary" value="Next">
 	    			</div>
 	    		</form>
 	 		</div>
 	 	</div>
- 		<div class="mainlogin col-4 hidden password">
- 			<div class="padding">
-	 			<form method="post">
-	 				<h3 class="title">Hi abc</h3>
-	 				<p class="title">To continue, first verify it's you</p>
-	 				<input type="password" class="form-control" id="pwd" name="pwd" placeholder="Enter your password">
-	 				<div class="form-group"><br><br>
-	    				<a href="" class="float-left">Forgot password?</a>
-	    				<input type="button" onclick="passwordsubmit()" class="float-right btn btn-primary" value="Submit">
-	    			</div>
-	 			</form>
-	 		</div>	
- 		</div>  
 	</div>
+
+ 	<div class="mainlogin col-4 hidden password">
+ 		<div class="padding">
+	 		<form method="post">
+	 			<h3 class="title">Hi abc</h3>
+	 			<svg width="400" height="54">
+  					<rect x="55" y="15" rx="20" ry="15" width="320" height="38" style="fill:white;stroke:grey;stroke-width:0.5;" />
+  					<svg height="100" width="100">
+  						<circle cx="80" cy="34" r="14" stroke="grey" stroke-width="0.5" fill="purple"/>
+					</svg>
+				</svg>
+				<p class="new3" style="margin-top:-8.5%;margin-left: 17%;font-size: 22px;color:white"></p>
+				<p class="new2" style="margin-top:-10.5%;font-size:initial;text-align:center;"></p>
+				<p style="margin-top:-10%">
+					<a href="#" style="margin-left:80%;" onclick="emailSection()">
+						<i class="fa fa-arrow-down" style="color:grey"></i>
+					</a>
+				</p>
+	 			<p class="title">To continue, first verify it's you</p>
+	 			<input type="password" class="form-control" id="pwd" name="pwd" placeholder="Enter your password">
+	 			<div class="form-group"><br><br>
+	    			<a href="" class="float-left">Forgot password?</a>
+	    			<input type="button" onclick="passwordsubmit()" class="float-right btn btn-primary" value="Submit" style="margin-bottom: 3%">
+	    		</div>
+	 		</form>
+	 	</div>	
+ 	</div>  
 </body>
 </html>

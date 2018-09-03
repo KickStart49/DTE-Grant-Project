@@ -67,16 +67,20 @@ function ValidateEmail(email)
 
 	    $(".login").addClass("hidden");
 	    $(".password").removeClass("hidden");
+      $(".new2").html(email);
+      var x=email.toUpperCase();
+      $(".new3").html(x.charAt(0));
 
 	  }else{
 
 	    $(".login").removeClass("loading");
 	    $(".loadingline").addClass("hidden");
-	    $(".loginmessage").html("Couldn't find your account");
+	    $(".loginmessage").html("Couldn't find your email");
 
 	  }
 
 	}
+  
 
   }else{
 
@@ -85,4 +89,9 @@ function ValidateEmail(email)
   }
 
 }
+function emailSection() {
+        $(".loadingline").addClass("hidden");
+     $(".password").addClass("hidden");
+      $(".login").removeClass("hidden");    
+  }
 
