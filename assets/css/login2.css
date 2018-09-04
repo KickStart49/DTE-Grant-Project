@@ -111,7 +111,7 @@ input[type="password"]{
 	border-top: none;
 	border-left: none;
 	border-right: none;
-	border-bottom: 3px solid #d3d3d3; 
+	border-bottom: 2px solid #d3d3d3; 
 	overflow: visible;
 }
 input[type="password"]:focus{
@@ -120,7 +120,7 @@ input[type="password"]:focus{
 	border-top: none;
 	border-left: none;
 	border-right: none;
-	border-bottom: 3px solid #4285F4; 
+	border-bottom: 2px solid #4285F4; 
 	overflow: visible;
 }
 .passwordlabel{

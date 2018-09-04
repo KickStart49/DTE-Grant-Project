@@ -4,6 +4,7 @@ $(document).ready(function () {
           'top': '58%',
           'color': '#000000',
           'cursor': 'auto',
+           'font-size':'100%',
       });
   });
   $('#email').change(function(){
@@ -12,6 +13,7 @@ $(document).ready(function () {
       $('.emaillabel').css({
           'color': '#000000',
           'top': '47%',
+           'font-size':'100%',
       });}
     });
   });
@@ -20,6 +22,7 @@ $(document).ready(function () {
           'color': '#4285F4',
           'top': '47%',
           'cursor': 'default',
+            'font-size':'90%',
       });
     });
     $(".emaillabel").click(function(){
@@ -34,6 +37,7 @@ $(document).ready(function () {
           'top': '63%',
           'color': '#000000',
           'cursor': 'auto',
+          'font-size':'100%',
       });
   });
   $('#pwd').change(function(){
@@ -42,6 +46,7 @@ $(document).ready(function () {
       $('.passwordlabel').css({
           'color': '#000000',
           'top': '54%',
+          'font-size':'100%',
       });}
     });
   });
@@ -50,6 +55,7 @@ $(document).ready(function () {
           'color': '#4285F4',
           'top': '54%',
           'cursor': 'default',
+          'font-size':'90%',
       });
     });
     $(".passwordlabel").click(function(){
@@ -139,9 +145,25 @@ function passwordsubmit()
     $(".passwordmessage").html("Please provide password");
 
   }else{
+          Validate(pwd)
+        }
+}
+function Validate(pwd)
+{
+    if(pwd == "123"){
+
+        $(".password").addClass("hidden");
+
+    }
    
-
-    $(".password").addClass("hidden");
-
+    else
+    {
+    $(".passwordmessage").html("Wrong Password");
+  }
 }
-}
+/*$(document).keypress(function(e) {
+    var keycode = (e.keyCode ? e.keyCode : e.which);
+    if (keycode == '13') {
+        loginsubmit();
+    }
+});*/
