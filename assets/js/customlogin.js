@@ -1,7 +1,7 @@
 $(document).ready(function () {
   $('#email').focusout(function() {
       $('.emaillabel').css({
-          'top': '52%',
+          'top': '58%',
           'color': '#000000',
           'cursor': 'auto',
       });
@@ -11,14 +11,14 @@ $(document).ready(function () {
       if($("#email").val()){
       $('.emaillabel').css({
           'color': '#000000',
-          'top': '40%',
+          'top': '47%',
       });}
     });
   });
     $('#email').focus(function() {
       $('.emaillabel').css({
           'color': '#4285F4',
-          'top': '40%',
+          'top': '47%',
           'cursor': 'default',
       });
     });
@@ -26,6 +26,36 @@ $(document).ready(function () {
       $("#email").trigger("focus");
     });
     $("#email").trigger("focus");
+});
+
+$(document).ready(function () {
+  $('#pwd').focusout(function() {
+      $('.passwordlabel').css({
+          'top': '63%',
+          'color': '#000000',
+          'cursor': 'auto',
+      });
+  });
+  $('#pwd').change(function(){
+    $('#pwd').focusout(function() {
+      if($("#pwd").val()){
+      $('.passwordlabel').css({
+          'color': '#000000',
+          'top': '54%',
+      });}
+    });
+  });
+    $('#pwd').focus(function() {
+      $('.passwordlabel').css({
+          'color': '#4285F4',
+          'top': '54%',
+          'cursor': 'default',
+      });
+    });
+    $(".passwordlabel").click(function(){
+      $("#pwd").trigger("focus");
+    });
+    $("#pwd").trigger("focus");
 });
 
 function loginsubmit(){
@@ -73,7 +103,10 @@ function ValidateEmail(email)
 
 	  }else{
 
-	    $(".login").removeClass("loading");
+	    
+       $(".password").addClass("loading");
+    $(".loadingline").removeClass("hidden");
+    $(".login").removeClass("loading");
 	    $(".loadingline").addClass("hidden");
 	    $(".loginmessage").html("Couldn't find your email");
 
@@ -95,3 +128,20 @@ function emailSection() {
       $(".login").removeClass("hidden");    
   }
 
+function passwordsubmit()
+{
+      var pwd = $("#pwd").val();
+
+  // Check Null
+
+  if(!pwd){
+
+    $(".passwordmessage").html("Please provide password");
+
+  }else{
+   
+
+    $(".password").addClass("hidden");
+
+}
+}
