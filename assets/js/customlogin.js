@@ -63,7 +63,18 @@ $(document).ready(function () {
     });
     $("#pwd").trigger("focus");
 });
+$(document).ready(function() {
+    $(".btn").click(function() {
+        /*$(".wait").css("cursor", "default");*/
+        $(".wait").prop("disabled",true);
+         setTimeout(goto,2000);
+       
 
+    });
+});
+function goto(){
+       $(".wait").prop("disabled",false);    
+}
 function loginsubmit(){
   
   var email = $("#email").val();
@@ -92,7 +103,6 @@ function ValidateEmail(email)
   	{
     
     // Check Database
-
     $(".login").addClass("loading");
   	$(".loadingline").removeClass("hidden");
     setTimeout(VerifyEmail, 2000);
@@ -106,6 +116,7 @@ function ValidateEmail(email)
       $(".new2").html(email);
       var x=email.toUpperCase();
       $(".new3").html(x.charAt(0));
+
 
 	  }else{
 
@@ -131,8 +142,11 @@ function ValidateEmail(email)
 function emailSection() {
         $(".loadingline").addClass("hidden");
      $(".password").addClass("hidden");
-      $(".login").removeClass("hidden");    
-  }
+      $(".login").removeClass("hidden");
+       $(".loginmessage").addClass("hidden");
+       
+
+  }  
 
 function passwordsubmit()
 {
@@ -153,6 +167,7 @@ function Validate(pwd)
     if(pwd == "123"){
 
         $(".password").addClass("hidden");
+        $(".bot").addClass("hidden");
 
     }
    

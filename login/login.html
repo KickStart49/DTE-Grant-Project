@@ -16,60 +16,63 @@
  		<div class="mainlogin col-4 login">
  			<div class="loadingline hidden"></div>
  			<div class="padding">
- 				<img src="../images/logo.png" style="width:35%;margin-left: 32%;">
-	 			<h4 class="title" style="margin-top: 5%">Sign in</h4>
+ 				<img src="../images/logo.png" class="image">
+	 			<h4 class="title margin2">Sign in</h4>
 	 			<p class="title" style="margin-bottom:16%">with your KickStart Account</p>
 	 			<form method="post">
 	 				<label class="emaillabel">Enter your email</label>
-	    			<input type="email" class="form-control" id="email" name="email">
+	    			<input type="email" class="form-control margin thick wait" id="email" name="email">
 	    			<br>
-	    			<p style="color:red;margin-left: 3%"class="loginmessage"></p>
+	    			<p class="loginmessage para"></p>
 	    			<br>
 	    			<div class="form-group">
-	    				<a href="" class="c float-left" style="margin-left:3%">Forgot email?</a>
-	    				<input type="button" onclick="loginsubmit()" id="next" class=" float-right btn btn-primary" value="Next"><!--onkeypress="handleEnter(event)"-->
+	    				<a href="" class="c float-left margin">Forgot email?</a>
+	    				<input type="button" onclick="loginsubmit()" id="next" class="WaitOnClick float-right btn btn-primary" value="Next"><!--onkeypress="handleEnter(event)"-->
 	    			</div>
 	    		</form>
 	 		</div>
 	 	</div>
-	<div style="margin-top:42%" class="login">
-	<a href="#" style="padding-left: 37%;color: grey">New to KickStart?</a>
-</div>
-	<div style="margin-top:-1.8%" class="login">
-	<a href="#" style="padding-left: 55%;color: grey">Help</a>
-</div>
-	<div style="margin-top: -1.8%" class="login">
-	<a href="#" style="padding-left: 60%;color: grey;">About us</a>
-</div>
-</div>
+	</div>
+	<div class="bot">
+		<div class="bottom">
+			<a href="#" class="colour">New to KickStart?</a>
+		</div>
+		<div class="bottom1">
+			<a href="#"  class="colour">Help</a>
+		</div>
+		<div class="bottom2">
+			<a href="#"  class="colour">About us</a>
+		</div>
+	</div>
+
  	<div class="mainlogin col-4 hidden password">
  		<div class="padding">
 	 		<form method="post">
-	 			<img src="../images/logo.png" style="width:35%;margin-left: 32%;">
-	 			<h3 class="title" style="margin-top: 5%;margin-bottom:-1%">Hi abc</h3>
+	 			<img src="../images/logo.png" class="image">
+	 			<h3 class="title margin2" style="margin-bottom:-1%">Hi abc</h3>
 	 			<svg width="400" height="54">
-  					<rect x="55" y="15" rx="20" ry="15" width="320" height="38" style="fill:white;stroke:grey;stroke-width:0.5;" />
+  					<rect x="55" y="15" rx="20" ry="15" width="320" height="38" class="rectangle" />
   					<svg height="100" width="100">
   						<circle cx="80" cy="34" r="14" stroke="grey" stroke-width="0.5" fill="purple"/>
 					</svg>
 				</svg>
-				<p class="new3" style="margin-top:-8.5%;margin-left: 17%;font-size: 22px;color:white"></p>
-				<p class="new2" style="margin-top:-10.5%;font-size:initial;text-align:center;"></p>
-				<p style="margin-top:-10%">
-					<a href="#" style="margin-left:80%;" onclick="emailSection()">
-						<i class="fa fa-arrow-down" style="color:grey"></i>
+				<p class="new3"></p>
+				<p class="new2"></p>
+				<p class="goto">
+					<a href="#" onclick="emailSection()" class="colour">
+						<i class="fa fa-arrow-down new5"></i>
 					</a>
 				</p>
 	 			<p class="title">To continue, first verify it's you</p>
-	 			<div style="margin-top: 11%">
-	 			<label class="passwordlabel">Enter your password</label>
-	 			<input type="password" class="form-control" id="pwd" name="pwd">
-	 			<p style="color:red;margin-left: 3%"class="passwordmessage"></p>
-	 			<br>
-	 		</div>
+	 			<div class="top">
+	 				<label class="passwordlabel">Enter your password</label>
+	 				<input type="password" class="form-control thick margin" id="pwd" name="pwd">
+	 				<p class="passwordmessage para"></p>
+	 				<br>
+	 			</div>
 	 			<div class="form-group">
-	    			<a href="" class="float-left" style="margin-left:3%">Forgot password?</a>
-	    			<input type="button" onclick="passwordsubmit()" class="float-right btn btn-primary" value="Next" style="margin-bottom: 3%">
+	    			<a href="" class="float-left margin">Forgot password?</a>
+	    			<input type="button" onclick="passwordsubmit()" class="float-right btn btn-primary bottom-button" value="Next">
 	    		</div>
 	 		</form>
 	 	</div>	

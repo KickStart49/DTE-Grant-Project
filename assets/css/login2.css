@@ -57,8 +57,12 @@
 }
 .loading{
 	background-color: #FAFAFA;
-	cursor : no-drop;
+	cursor : auto;
 }
+.btn:focus { outline: none !important;
+    border: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;}
 .loadingline {
     width: 40%;
     height: 3px;
@@ -94,6 +98,7 @@ input[type="email"]:focus{
 	border-right: none;
 	border-bottom: 2px solid #4285F4; 
 	overflow: visible;
+	padding-left: 0.6%;
 }
 .emaillabel{
 	cursor: auto;
@@ -122,6 +127,7 @@ input[type="password"]:focus{
 	border-right: none;
 	border-bottom: 2px solid #4285F4; 
 	overflow: visible;
+	padding-left: 0.6%;
 }
 .passwordlabel{
 	cursor: auto;
@@ -133,4 +139,75 @@ input[type="password"]:focus{
     transition: top 0.3s,color 0.3s;
     transition-timing-function: ease-in-out;
 }
-	
+.margin{
+	margin-left: 3%;
+}
+.image
+{
+	width:35%;
+	margin-left: 32%;
+}
+.bottom
+{
+	margin-top:41%;
+	padding-left: 37.2%;
+}
+.bottom1
+{
+	margin-top:-1.8%;
+	padding-left: 58.8%;
+}
+.bottom2
+{
+	margin-top: -1.8%;
+	padding-left: 62.8%;
+}
+.colour
+{
+	color: grey;
+}
+.thick
+{
+	width: 94%;
+}
+.para
+{
+	color:red;
+	margin-left: 3%;
+}
+.rectangle
+{
+	fill:white;
+	stroke:grey;
+	stroke-width:0.5;
+}
+.new3
+{
+	margin-top:-8.5%;
+	margin-left: 17%;
+	font-size: 22px;
+	color:white;
+}
+.new2
+{
+	margin-top:-10.5%;
+	font-size:initial;
+	text-align:center;
+}
+.margin2
+{
+	margin-top: 5%;
+}
+.goto
+{
+	margin-top:-10%;
+	margin-left:80%;
+}
+.top
+{
+	margin-top: 11%;
+}
+.bottom-button
+{
+	margin-bottom: 3%;
+}
