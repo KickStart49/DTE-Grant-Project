@@ -109,26 +109,26 @@ function ValidateEmail(email)
 
     function VerifyEmail(){
 
-	  if(email == "abc@gmail.com"){
-
-	    $(".login").addClass("hidden");
-	    $(".password").removeClass("hidden");
-      $(".new2").html(email);
-      var x=email.toUpperCase();
-      $(".new3").html(x.charAt(0));
-
-
-	  }else{
-
-	    
-       $(".password").addClass("loading");
-    $(".loadingline").removeClass("hidden");
-    $(".login").removeClass("loading");
-	    $(".loadingline").addClass("hidden");
-	    $(".loginmessage").html("Couldn't find your email");
-
-	  }
-
+    var data = {
+      'email': email,
+    };
+    var ajaxurl = "loginadmin.php";
+    jQuery.post(ajaxurl, data, function(response) {
+      alert(response);
+      if(response == "true"){
+        $(".login").addClass("hidden");
+        $(".password").removeClass("hidden");
+        $(".new2").html(email);
+        var x=email.toUpperCase();
+        $(".new3").html(x.charAt(0));
+      }else{  
+        $(".password").addClass("loading");
+        $(".loadingline").removeClass("hidden");
+        $(".login").removeClass("loading");
+        $(".loadingline").addClass("hidden");
+        $(".loginmessage").html("Couldn't find your email");
+      }
+    });
 	}
   
 
