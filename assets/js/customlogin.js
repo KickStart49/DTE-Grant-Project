@@ -20,9 +20,9 @@ $(document).ready(function () {
     $('#email').focus(function() {
       $('.emaillabel').css({
           'color': '#4285F4',
-          'top': '47%',
+          'top': '54%',
           'cursor': 'default',
-            'font-size':'90%',
+            'font-size':'80%',
       });
     });
     $(".emaillabel").click(function(){
@@ -34,7 +34,7 @@ $(document).ready(function () {
 $(document).ready(function () {
   $('#pwd').focusout(function() {
       $('.passwordlabel').css({
-          'top': '63%',
+          'top': '68%',
           'color': '#000000',
           'cursor': 'auto',
           'font-size':'100%',
@@ -53,9 +53,9 @@ $(document).ready(function () {
     $('#pwd').focus(function() {
       $('.passwordlabel').css({
           'color': '#4285F4',
-          'top': '54%',
+          'top': '64%',
           'cursor': 'default',
-          'font-size':'90%',
+          'font-size':'80%',
       });
     });
     $(".passwordlabel").click(function(){

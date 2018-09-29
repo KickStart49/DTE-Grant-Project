@@ -27,7 +27,7 @@
 }
 .mainlogin 
 {
-	top:50%;
+	top:46%;
 	position: absolute;
 	left: 50%;
 	transform: translate(-50%,-50%);
@@ -131,7 +131,7 @@ input[type="password"]:focus{
 }
 .passwordlabel{
 	cursor: auto;
-	top: 65%;
+	top: 62%;
 	left:6%;
 	color:#000000;
 	position: absolute;
@@ -147,20 +147,24 @@ input[type="password"]:focus{
 	width:35%;
 	margin-left: 32%;
 }
+.bot
+{
+	margin-top: 38%;
+}
 .bottom
 {
-	margin-top:41%;
-	padding-left: 37.2%;
+	position: absolute;
+	left: 36%;
 }
 .bottom1
 {
-	margin-top:-1.8%;
-	padding-left: 58.8%;
+	position: absolute;
+	left: 57.4%;
 }
 .bottom2
 {
-	margin-top: -1.8%;
-	padding-left: 62.8%;
+	position: absolute;
+	left: 63%;
 }
 .colour
 {
